@@ -1,0 +1,99 @@
+.imgPromoSelect{
+    -webkit-transition: 1s linear;
+    transition: .5s linear;
+
+}   
+.imgPromoSelect:hover{
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+}
+
+.navIncompletas{
+   
+  margin-top: 10px;
+    
+}
+
+.navCompletas{
+    display: block;
+    position: relative;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    overflow: auto;
+}
+
+.theader{
+    height: 55px;
+}
+
+td{
+    width:30%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.styleTable{
+    height: 100%;
+}
+
+.modalFix{
+    -webkit-animation-name: modalFix;
+    animation-name: modalFix;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes modalFix {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes modalFix {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+
+    .navegacion{
+        display: block;
+    }
+
+  }
+  nav.container.modalFix{
+    max-height: 500px;
+    overflow: auto;
+  }
+
+  .footer{
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+   
+  }

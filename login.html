@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS Bootstrap -->
+  <link rel="stylesheet" href= "includes/css/login.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+  <title>Login</title>
+</head>
+
+<body>
+
+
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active" id="signIn"> Sign In </h2>
+      <h2 class="inactive underlineHover" id="signUp" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" aria-current="page"">Sign Up </h2>
+      
+          <!-- Icon -->
+          <div class=" fadeIn first">
+        <img src="includes/images/promo-select.PNG" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form method="post" id="formulario" action="http://localhost/Promo-Select-PHP/includes/index.php">
+
+      <input type="email" id="login" class="fadeIn second" name="login" placeholder="login" required>
+      <input type="password" id="password" class="fadeIn third" name="login" placeholder="*********" required>
+      <input type="submit" class="fadeIn fourth" value="Log In" id="btnSignIn">
+      <!-- <button type="button" class="fadeIn fourth" value="Log In" id = "btnSignIn">Sign In</button> -->
+
+    </form>
+
+
+
+  </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registrar nuevo Usuario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Aqui se mostrara la ventana para crear Usuarios nuevos -->
+          <div class="container divTask" id="newUsers">
+
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inpnombre"  style = "width: 375px">
+            </div>
+
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Apellidos</label>
+              <input type="textarea" class="form-control" id="inpApellidos"  style = "width: 375px">
+            </div>
+
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="inpEmail"  placeholder="ejemplo@ejemplo.com">
+            </div>
+
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label" >Contraseña</label>
+              <input type="password" class="form-control" id="inpPass" placeholder="***********">
+            </div>
+
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label" >Repetir Contraseña</label>
+              <input type="password" class="form-control" id="inpPassRepeat" placeholder ="************">
+            </div>
+
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="createTask">Crear Usuario</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="includes/js/login.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.min.js"
+  integrity="sha512-ewfXo9Gq53e1q1+WDTjaHAGZ8UvCWq0eXONhwDuIoaH8xz2r96uoAYaQCm1oQhnBfRXrvJztNXFsTloJfgbL5Q=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
